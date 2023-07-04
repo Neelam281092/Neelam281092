@@ -1,0 +1,42 @@
+package Automation;
+import java.util.Scanner;
+public class calculator {
+ int a ;
+ int b ;
+ int ans;
+ void add(int a,int b)
+ {
+	 ans = a + b;
+	 System.out.println("Addition is"+ ans);
+ }
+ void sub(int a, int b)
+ {
+	 ans= a-b;
+	 System.out.println("Substraction is"+ ans);
+ }
+ void mul(int a, int b)
+ {
+	 ans = a * b;
+	 System.out.println("Multiplication is"+ ans);
+ }
+ void div(int a, int b)
+ {
+	 ans = a/b;
+	 System.out.println("Division is"+ ans);
+ }
+ public static void main(String[]args)
+ {
+	 calculator cal = new calculator();
+	 Scanner scanner = new Scanner(System.in);
+	 System.out.println("please enter first no");
+	 int x = scanner.nextInt();
+	 System.out.println("please enter second no");
+	 int y = scanner.nextInt();
+	 cal.add(x,y);
+	 cal.sub(x,y);
+	 cal.mul(x,y);
+	 cal.div(x,y);
+	 
+	 
+ }
+}
