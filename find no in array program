@@ -1,0 +1,28 @@
+package Automation;
+
+import java.util.Scanner;
+
+public class findnoinarray {
+	int[]arr = {10,20,24,25,86};
+	  int num;
+	
+	  boolean m1(int num){
+		  boolean flag = false; 
+		  for(int index =0; index< arr.length; index++)
+		  {
+			  if (arr[index]== num)
+			  {
+				  flag = true;
+				  break;
+			  }
+		  }
+	  
+		  return flag;
+	  
+	}
+ public static void main(String []args) {
+	 findnoinarray  Findnoinarray = new findnoinarray();
+	 System.out.println(Findnoinarray.m1(10));
+
+ }
+}
